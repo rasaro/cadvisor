@@ -10,5 +10,5 @@ Build of Google's [cadvisor](https://github.com/google/cadvisor) for amd64, arm7
 ## Building
 
 ```
-docker buildx build -t rasaro/cadvisor:v0.36.0 --push --platform linux/amd64,linux/arm64,linux/arm .
+docker buildx build -t rasaro/cadvisor:v0.36.0 -t rasaro/cadvisor:latest --push --platform linux/amd64,linux/arm64,linux/arm .
 ```
