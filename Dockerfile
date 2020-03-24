@@ -7,7 +7,7 @@ ENV CGO_ENABLED 0
 
 RUN go get github.com/google/cadvisor@v0.36.0
 
-FROM alpine
+FROM --platform=$TARGETPLATFORM alpine
 
 COPY --from=builder /go/bin/cadvisor /usr/bin/cadvisor
 
